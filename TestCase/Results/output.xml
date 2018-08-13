@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180814 00:30:52.533" generator="Robot 3.0.4 (Python 2.7.14 on win32)">
+<suite source="D:\GitLocal\AppiumZalo\TestCase\OpenApp.robot" id="s1" name="OpenApp">
+<test id="s1-t1" name="Open the app">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.</doc>
+<arguments>
+<arg>${APPIUM_SERVER}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${PACKET_NAME}</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+</arguments>
+<msg timestamp="20180814 00:31:00.501" level="INFO">Redirecting http://127.0.0.1:4723/wd/hub/session -&gt; http://127.0.0.1:4723/wd/hub/session/62c5eba9-47c4-4a8c-8b51-59283c3293aa</msg>
+<status status="PASS" endtime="20180814 00:31:00.501" starttime="20180814 00:30:52.648"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<msg timestamp="20180814 00:31:05.508" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20180814 00:31:05.508" starttime="20180814 00:31:00.501"></status>
+</kw>
+<kw name="Close All Applications" library="AppiumLibrary">
+<doc>Closes all open applications.</doc>
+<status status="PASS" endtime="20180814 00:31:06.837" starttime="20180814 00:31:05.508"></status>
+</kw>
+<doc>Open the application</doc>
+<status status="PASS" endtime="20180814 00:31:06.837" critical="yes" starttime="20180814 00:30:52.648"></status>
+</test>
+<status status="PASS" endtime="20180814 00:31:06.837" starttime="20180814 00:30:52.533"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="OpenApp" pass="1">OpenApp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
